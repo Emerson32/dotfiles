@@ -19,7 +19,7 @@ call plug#begin('~/.vim/bundle')
         Plug 'tpope/vim-eunuch'
         Plug 'w0rp/ale'
 
-cal plug#end()
+call plug#end()
 
 
 " General formatting settings
