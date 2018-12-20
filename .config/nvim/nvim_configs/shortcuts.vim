@@ -34,3 +34,6 @@ map <C-f> :NERDTreeToggle<CR>
 
 "8. Go to definition shrotcut
 nmap <C-g> :ALEGoToDefinition
+                        
+"9. Launch fzf in normal mode
+nmap <C-s> :Files<CR>
