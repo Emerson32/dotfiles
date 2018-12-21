@@ -9,25 +9,25 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 filetype plugin on
 
 " Additional Settings
-let g:NERDDefaultAlign = 'left'                                              
+let g:NERDDefaultAlign = 'left'
 let g:NERDAltDelims_c=1
 
 " 2. Ale
 
 " Set ale fixers
-let g:ale_fixers = {                                                         
-\   '*': ['remove_trailing_lines', 'trim_whitespace'],                       
+let g:ale_fixers = {
+\   '*': ['remove_trailing_lines', 'trim_whitespace'],
 \}
 
 " Fix on save
-let g:ale_fix_on_save = 1 
+let g:ale_fix_on_save = 1
 
 " Completion settings
-let g:ale_completion_enabled = 1                                             
-let g:ale_completion_delay = 300 
+let g:ale_completion_enabled = 1
+let g:ale_completion_delay = 300
 
 " Error/Warning settings
-let g:ale_sign_error = '>>'                                                  
+let g:ale_sign_error = '>>'
 let g:ale_sign_warning = '!'
 
 " 3. Deoplete
@@ -35,8 +35,6 @@ let g:ale_sign_warning = '!'
 " Enable
 let g:deoplete#enable_at_startup = 1
 
-" Deoplete tab-complete
-inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>" 
 
 """""""""""""""""""""""""""""
 " Aesthetic Plugin settings "
@@ -49,7 +47,7 @@ inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 let g:airline_theme='tomorrow'
 
 " Smarter tab line
-let g:airline#extensions#tabline#enabled = 1                                 
+let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 
 " Vim/NVim Color Scheme
