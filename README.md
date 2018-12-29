@@ -7,4 +7,4 @@ These are the current dotfiles for my Arch Linux install.
 * i3(i3-gaps)
 * i3blocks
 * rofi
-* vim
+* nvim
