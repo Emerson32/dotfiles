@@ -8,3 +8,9 @@ These are the current dotfiles for my Arch Linux install.
 * i3blocks
 * rofi
 * nvim
+
+# Dependencies:
+* i3
+* rofi
+* nvim
+* vim-plug (plugin manager for vim/nvim)
