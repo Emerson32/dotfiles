@@ -6,6 +6,7 @@ call plug#begin('~/.vim/bundle')
         Plug 'msanders/snipmate.vim'                                         
         Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }    
         Plug 'junegunn/fzf.vim'                                              
+        Plug 'nvie/vim-flake8' 
         Plug 'scrooloose/nerdcommenter'                                      
         Plug 'scrooloose/nerdtree'                                           
         Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }

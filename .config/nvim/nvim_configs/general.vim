@@ -11,12 +11,12 @@ set noic
 syntax on
 
 " Tab options
-set tabstop=8
-set shiftwidth=8
+set tabstop=4
+set shiftwidth=4
 set expandtab
 set smarttab autoindent
 
-set textwidth=79
+set textwidth=80
 set colorcolumn=-2
 "packadd! matchit
 

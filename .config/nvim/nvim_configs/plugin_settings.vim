@@ -35,6 +35,7 @@ let g:ale_sign_warning = '!'
 " Enable
 let g:deoplete#enable_at_startup = 1
 
+" 4. Flake8
 
 """""""""""""""""""""""""""""
 " Aesthetic Plugin settings "
