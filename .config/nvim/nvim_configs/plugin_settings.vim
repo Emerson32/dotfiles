@@ -30,12 +30,19 @@ let g:ale_completion_delay = 300
 let g:ale_sign_error = '>>'
 let g:ale_sign_warning = '!'
 
-" 3. Deoplete
-
-" Enable
-let g:deoplete#enable_at_startup = 1
 
 " 4. Flake8
+
+
+" 5. youcompleteme (Python)
+let g:ycm_python_interpreter_path = ''
+let g:ycm_python_sys_path = []
+let g:ycm_extra_conf_vim_data = [
+  \  'g:ycm_python_interpreter_path',
+  \  'g:ycm_python_sys_path'
+  \]
+let g:ycm_global_ycm_extra_conf = '~/global_extra_conf.py'
+
 
 """""""""""""""""""""""""""""
 " Aesthetic Plugin settings "
