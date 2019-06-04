@@ -14,3 +14,6 @@ These are the current dotfiles for my Arch Linux install.
 * rofi
 * nvim
 * vim-plug (plugin manager for vim/nvim)
+* build-essential (ycm)
+* cmake (ycm)
+* python3-dev (ycm)
