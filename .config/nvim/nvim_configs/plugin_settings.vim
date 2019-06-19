@@ -50,7 +50,7 @@ let g:ycm_global_ycm_extra_conf = '~/global_extra_conf.py'
 """""""""""""""""""""""""""""
 
 " GruvBox
-let g:gruvbox_contrast_dark = 'hard'
+let g:gruvbox_contrast_dark = 'medium'
 let g:gruvbox_italicize_comments = 1
 
 " Vim-Airline Settings
