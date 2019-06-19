@@ -49,14 +49,18 @@ let g:ycm_global_ycm_extra_conf = '~/global_extra_conf.py'
 "                           "
 """""""""""""""""""""""""""""
 
+" GruvBox
+let g:gruvbox_contrast_dark = 'hard'
+let g:gruvbox_italicize_comments = 1
+
 " Vim-Airline Settings
 
 " Color Scheme
-let g:airline_theme='tomorrow'
+let g:airline_theme='gruvbox'
 
 " Smarter tab line
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 
 " Vim/NVim Color Scheme
-colorscheme Tomorrow-Night-Eighties
+colorscheme gruvbox
