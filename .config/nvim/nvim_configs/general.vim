@@ -8,6 +8,7 @@ set showcmd
 set nohls
 set nocp
 set noic
+set termguicolors
 syntax on
 
 " Tab options

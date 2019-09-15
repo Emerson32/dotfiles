@@ -22,17 +22,11 @@ let g:ale_fixers = {
 " Fix on save
 let g:ale_fix_on_save = 1
 
-" Completion settings
-let g:ale_completion_enabled = 1
-let g:ale_completion_delay = 300
-
 " Error/Warning settings
 let g:ale_sign_error = '>>'
 let g:ale_sign_warning = '!'
 
-
 " 4. Flake8
-
 
 " 5. youcompleteme (Python)
 let g:ycm_python_interpreter_path = ''
@@ -42,6 +36,22 @@ let g:ycm_extra_conf_vim_data = [
   \  'g:ycm_python_sys_path'
   \]
 let g:ycm_global_ycm_extra_conf = '~/global_extra_conf.py'
+
+"  Turn off documentation tips after insertion
+autocmd CompleteDone * pclose
+
+
+"6. Utilisnips
+
+" Trigger configuration
+let g:UltiSnipsExpandTrigger="<c-e>"
+let g:UltiSnipsJumpForwardTrigger="<c-k>"
+let g:UltiSnipsJumpBackwardTrigger="<c-j>"
+
+"7. Vim-Slime
+
+" Enable tmux support
+let g:slime_target = "tmux"
 
 
 """""""""""""""""""""""""""""
