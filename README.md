@@ -6,8 +6,11 @@ These are the current dotfiles for my Arch Linux install.
 ## Configs for installed programs
 * i3(i3-gaps)
 * i3blocks
-* rofi
+* compton
 * nvim
+* rofi
+* termite
+
 
 # Dependencies:
 * i3
@@ -17,3 +20,5 @@ These are the current dotfiles for my Arch Linux install.
 * build-essential (ycm)
 * cmake (ycm)
 * python3-dev (ycm)
+* compton
+* termite
