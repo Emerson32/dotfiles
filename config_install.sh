@@ -2,17 +2,23 @@
 #
 # config_install.sh - Installs respective configs
 
-# UID and Error Constatns
+# UID
 ROOT_UID=0
-USER_ID=1000
+USER_ID="1000"
+
+# User name
+USER_NAME="$(getent passwd "$USER_ID" | cut -d: -f1)"
+
+# Error constants
 E_WRONG_USER=65
 E_NO_SUCH_USER=70
+CONNECTION_DOWN=75
 
 
 # Root privileges will be needed for later installs
 if [ "$EUID" -ne 0 ]; then
 	echo Error: This script requires root privileges
-	exit 1
+	exit $E_WRONG_USER
 fi
 
 # 1. First, check for an internet connection
@@ -22,11 +28,12 @@ if [ $? -eq 0 ]; then
 	echo "[+] Internet Connection Up"
 else
 	echo "[!] Internet Connection Down"
-	exit 1
+	exit $CONNECTION_DOWN
 fi
 
 # Function to determine the correct package manager
-prog_exists() {
+prog_exists()
+{
 	[ -x "$(which $1)" ]
 }
 
@@ -47,6 +54,7 @@ fi
 
 
 # Clone the config repo to the home directory
-sudo -i -u "$USER" /bin/bash << eof
-git clone https://github.com/Emerson32/dotfiles.git /home/"$USER"/dotfiles
+sudo -i -u "#$USER_ID" /bin/bash << eof
+mkdir config_install
+git clone https://github.com/Emerson32/dotfiles.git /home/"$USER_NAME"/config_install
 eof
