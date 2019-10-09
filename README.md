@@ -10,6 +10,7 @@ These are the current dotfiles for my Arch Linux install.
 * nvim
 * rofi
 * termite
+* tmux
 
 
 # Dependencies:
@@ -22,3 +23,4 @@ These are the current dotfiles for my Arch Linux install.
 * python3-dev (ycm)
 * compton
 * termite
+* tmux
