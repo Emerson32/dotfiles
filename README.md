@@ -21,6 +21,7 @@ These are the current dotfiles for my Arch Linux install.
 * build-essential (ycm)
 * cmake (ycm)
 * python3-dev (ycm)
+* flake8
 * compton
 * termite
 * tmux
