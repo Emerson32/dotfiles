@@ -25,3 +25,4 @@ These are the current dotfiles for my Arch Linux install.
 * compton
 * termite
 * tmux
+* tpm(tmux plugin manager)
