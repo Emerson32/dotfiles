@@ -24,10 +24,10 @@ nmap } }zz
 nmap { {zz
 
 "5. Map Caps Lock to Escape when  entering vim
-au VimEnter * !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
+"au VimEnter * !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
 
 "6. Map Escape to Caps Lock when exiting vim
-au VimLeave * !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Caps_Lock'
+"au VimLeave * !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Caps_Lock'
 
 "7. Open NERDTree
 map <C-f> :NERDTreeToggle<CR>
