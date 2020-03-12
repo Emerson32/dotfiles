@@ -1,0 +1,4 @@
+# Programming aliases
+
+## gdb
+alias gdb_super='gdb --batch --ex run --ex bt --ex q --args'
