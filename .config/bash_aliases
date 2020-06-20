@@ -1,4 +1,5 @@
-# Programming aliases
+# tmux aliases
+alias new-tmux='tmux new-session -t'
 
-## gdb
+# debugging aliases
 alias gdb_super='gdb --batch --ex run --ex bt --ex q --args'
