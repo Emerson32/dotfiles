@@ -2,6 +2,7 @@
 
 call plug#begin('~/.vim/bundle')
 
+        Plug 'cohama/lexima.vim'
         Plug 'dense-analysis/ale'
         Plug 'flazz/vim-colorschemes'
         Plug 'honza/vim-snippets'
