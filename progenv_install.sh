@@ -55,3 +55,6 @@ printf "[+] Done\n\n"
 
 # Copy tmux configs
 cp ~/dotfiles/.config/tmux/tmux.conf ~/.tmux.conf
+
+# Copy bash_aliases file
+cp ~/dotfiles/.config/bash_aliases ~/.bash_aliases
